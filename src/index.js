@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
+import "./assets/vendor/fontawesome-free-5.12.1-web/css/all.css";
 
 ReactDOM.render(<App />, document.getElementById("my_root"));
 
