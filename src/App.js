@@ -6,6 +6,7 @@ import "./App.css";
 import DashBoard from "./components/DashBoard";
 import Header from "./components/Layout/Header";
 import AddProject from "./components/Project/AddProject";
+import UpdateProject from "./components/Project/UpdateProject";
 
 class App extends Component {
   render() {
@@ -16,6 +17,11 @@ class App extends Component {
             <Header />
             <Route exact path="/dashboard" component={DashBoard} />
             <Route exact path="/addProject" component={AddProject} />
+            <Route
+              exact
+              path="/updateProject/:projectIdentifier"
+              component={UpdateProject}
+            />
           </div>
         </Router>
       </Provider>
@@ -24,5 +30,3 @@ class App extends Component {
 }
 
 export default App;
-
-// continue from 13th video
